@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "spartie/laravel-remote",
+    "description": "Execuute Artisan commands on remote servers",
     "keywords": [
-        ":vendor_name",
+        "Spartie",
         "laravel",
-        ":package_slug"
+        "laravel-remote"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/spartie/laravel-remote",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "David Adigwu",
+            "email": "davidadigwu@gmail.com",
             "role": "Developer"
         }
     ],
@@ -34,13 +34,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories"
+            "Spartie\\Remote\\": "src",
+            "Spartie\\Remote\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests"
+            "Spartie\\Remote\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -54,10 +54,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Spartie\\Remote\\RemoteServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "Remote": "Spartie\\Remote\\Facades\\Remote"
             }
         }
     },
