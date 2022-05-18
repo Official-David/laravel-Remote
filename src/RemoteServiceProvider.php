@@ -2,9 +2,9 @@
 
 namespace Spartie\Remote;
 
+use Spartie\Remote\Commands\RemoteCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Spartie\Remote\Commands\RemoteCommand;
 
 class RemoteServiceProvider extends PackageServiceProvider
 {
